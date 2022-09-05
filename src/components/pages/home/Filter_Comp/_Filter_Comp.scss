@@ -1,0 +1,40 @@
+@use "../../../../assets/styles/GlobalStyle" as global;
+@use "../../../../assets/styles/AppTheme" as theme;
+
+.FilterComp {
+    height: auto;
+    width: global.$fullWidth;
+
+    .filter__form {
+        fieldset {
+            display: flex;
+
+            select {
+                height: 40px;
+                width: global.$fullWidth;
+                margin: 0 3px;
+                font-size: 1rem;
+  
+                &:first-child {
+                  margin-left: 0;
+                };
+                &:last-child {
+                  margin-right: 0;
+                };
+            };
+            .search__button {
+                height: 40px;
+                width: global.$fullWidth;
+                border: none;
+                border-radius: 4px;
+                font-weight: 600;
+                margin-left: 5px;
+                padding: 0 10px;
+    
+                &:hover {
+                  background: linear-gradient(to right, #05139f, #7b00ff);
+                };
+            };
+        };
+    };
+};

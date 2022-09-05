@@ -1,0 +1,22 @@
+/*====  Global Variables ====*/
+
+//  Layout
+$deviceHeight: 100vh;
+$deviceWidth: 100vw;
+$fullHeight: 100%;
+$fullWidth: 100%;
+
+//  Font Size
+$heading: 3rem;
+$subHeading: 2rem;
+$fontSize: 1.6rem;
+
+
+
+.mCard {
+    box-shadow: 0 6px 12px 0 rgba(14,30,37,.12);
+    transition: 0.3s ease;
+};
+.mCard:hover {
+    box-shadow: 0 2px 4px 0 rgba(14,30,37,.3);
+};

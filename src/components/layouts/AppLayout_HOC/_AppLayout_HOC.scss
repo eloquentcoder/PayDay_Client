@@ -1,0 +1,93 @@
+@use "../../../assets/styles/GlobalStyle" as global;
+@use "../../../assets/styles/AppTheme" as theme;
+
+.AppLayoutComp {
+  height: auto;
+  width: global.$fullWidth;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+
+  display: grid;
+  grid-template-columns: [sidebar-start] 30rem [sidebar-end main-start] calc(100% - 30rem) [main-end];
+  grid-template-rows: [header-start] min-content [header-end body-start] 1fr [body-end footer-start] min-content [footer-end];
+
+  // display: grid;
+  // grid-template-columns: [col-start] global.$fullWidth [col-end];
+  // grid-template-rows: min-content 1fr;
+
+
+
+  /*==== LEFT SIDE DRAWER ====*/
+  aside {
+    @include theme.sideDrawerThemeDark;
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / -1;
+  };
+  .aside-light__theme {
+    @include theme.sideDrawerThemeLight;
+  };
+  .aside-dark__theme {
+    @include theme.sideDrawerThemeDark;
+  };
+
+  
+  /*========= HEADER =========*/
+  header {
+    @include theme.headerThemeDark;
+    grid-column:  main-start/ main-end;
+    grid-row: header-start / header-end;
+  };
+  .header-ligt__theme {
+    @include theme.headerThemeLight;
+  };
+  .header-dark__theme {
+    @include theme.headerThemeDark;
+  };
+
+
+  /*========= BODY =========*/
+  .body {
+    @include theme.mainWrapperThemeLight;
+    height: global.$fullHeight;
+    width: global.$fullWidth;
+    padding: 30px 50px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: transparent;
+    };
+    &::-webkit-scrollbar {
+      width: 3px;
+    };
+
+    grid-column: main-start / main-end;
+    grid-row: body-start / body-end;
+    
+  };
+  .body-light__theme {
+    @include theme.mainWrapperThemeLight;
+  };
+  .body-dark__theme {
+    @include theme.mainWrapperThemeDark;
+  };
+
+
+  /*========= FOOTER =========*/
+  footer {
+    @include theme.footerThemeDark;
+    grid-column:  main-start/ main-end;
+    grid-row: footer-start / footer-end;
+  };
+  .footer-light__theme {
+    @include theme.footerThemeLight;
+  };
+  .footer-dark__theme {
+    @include theme.footerThemeDark;
+  };
+};

@@ -1,0 +1,11 @@
+@import "../../../assets/styles/GlobalStyle";
+
+.AppFooterComp {
+  box-shadow: 0 -6px 6px -2px rgba(52, 66, 72, 0.12);
+  font-family: 'Barlow', sans-serif;
+  padding: 20px 0 20px 20px;
+
+  .footer-copyright {
+    text-align: center;
+  };
+};

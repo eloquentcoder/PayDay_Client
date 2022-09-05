@@ -1,0 +1,15 @@
+/*
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+*/
+
+@use "./assets/styles/GlobalStyle" as global;
+@use "./assets/styles/AppTheme" as theme;
+
+
+.App {
+  height: global.$deviceHeight;
+  width: global.$fullWidth;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: global.$fontSize;
+};

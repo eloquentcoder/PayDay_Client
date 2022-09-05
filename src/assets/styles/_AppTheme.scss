@@ -1,0 +1,340 @@
+@use "./GlobalStyle" as global;
+
+// Light Theme Colors
+$primaryFontColorLight: #222333;
+$secondaryFontColorLight: #6b6b6d;
+$lightFontLight: #efefef;
+$primaryBGLight: #ffffff;
+$secondaryBGLight: #efefef;
+
+// Dark Theme Colors
+$primaryFontColorDark: #ffffff;
+$secondaryFontColorDark: #a4a4a5;
+$lightFontDark: #efefef;
+$primaryBGDark: #2c2c34;
+$secondaryBGDark: #161616;
+
+$linkColorHover: #9d9d9d;
+$transition: all 1s ease;
+
+
+@mixin headerThemeLight {
+    background-color: $primaryBGLight;
+    color: $primaryFontColorLight;
+    transition: $transition;
+
+    form {
+        background-color: $secondaryBGLight;
+        transition: $transition;
+
+        input, select {
+            background-color: $secondaryBGLight;
+            border: none;
+            color: $primaryFontColorLight;
+            font-size: global.$fontSize;
+            transition: $transition;
+        };
+    };
+
+    button {
+        background-color: $secondaryBGLight;
+    };
+
+    a {
+        color: $secondaryFontColorLight;
+        text-decoration: none;
+        transition: $transition;
+    
+        &:hover {
+            text-decoration: none;
+            color: $linkColorHover;
+        };
+    };
+};
+@mixin headerThemeDark {
+    background-color: $primaryBGDark;
+    color: $primaryFontColorDark;
+    transition: $transition;
+
+    form {
+        background-color: rgba($secondaryBGDark, 0.4);
+        transition: $transition;
+
+        input, select {
+            background-color: rgba($secondaryBGDark, 0.4);
+            border: none;
+            color: $primaryFontColorDark;
+            font-size: global.$fontSize;
+            transition: $transition;
+        };
+    };
+
+    button {
+        background-color: rgba($secondaryBGDark, 0.4);
+    };
+
+    a {
+        color: $primaryFontColorDark;
+        text-decoration: none;
+        transition: $transition;
+    
+        &:hover {
+            text-decoration: none;
+            color: $linkColorHover;
+        };
+    };
+};
+
+
+
+// App Footer
+@mixin footerThemeLight {
+    background-color: $primaryBGLight;
+    color: $primaryFontColorLight;
+    transition: $transition;
+
+    a {
+        color: $secondaryFontColorLight;
+        text-decoration: none;
+        transition: $transition;
+    
+        &:hover {
+            text-decoration: none;
+            color: $linkColorHover;
+        };
+    };
+};
+@mixin footerThemeDark {
+    background-color: $primaryBGDark;
+    color: $primaryFontColorDark;
+    transition: $transition;
+
+    a {
+        color: $primaryFontColorDark;
+        text-decoration: none;
+        transition: $transition;
+    
+        &:hover {
+            text-decoration: none;
+            color: $linkColorHover;
+        };
+    };
+};
+
+
+
+// App Side Drawer
+@mixin sideDrawerThemeLight {
+    background-color: $primaryBGLight;
+    color: $primaryFontColorLight;
+    transition: $transition;
+
+    a {
+        color: $secondaryFontColorLight;
+        text-decoration: none;
+        transition: $transition;
+    
+        &:hover {
+            text-decoration: none;
+            color: $linkColorHover;
+        };
+    };
+    
+    .menu__item {
+        &:hover .menu__name, &:hover .indicator {
+            background-color: #C9E3AF;
+        };
+    };
+    .selected {
+      .menu__item {
+        .menu__name, .indicator {
+            background-color: #C9E3AF;
+        };
+      };
+    };
+};
+@mixin sideDrawerThemeDark {
+    background-color: $primaryBGDark;
+    color: $primaryFontColorDark;
+    transition: $transition;
+
+    a {
+        color: $primaryFontColorDark;
+        text-decoration: none;
+        transition: $transition;
+    
+        &:hover {
+            text-decoration: none;
+            color: $linkColorHover;
+        };
+    };
+    
+    .menu__item {
+        &:hover .menu__name, &:hover .indicator {
+            background-color: $secondaryBGDark;
+        };
+    };
+    .selected {
+      .menu__item {
+        .menu__name, .indicator {
+            background-color: $secondaryBGDark;
+        };
+      };
+    };
+};
+
+
+
+// App Main Wrapper
+@mixin mainWrapperThemeLight {
+    background-color: $secondaryBGLight;
+    color: $primaryFontColorLight;
+    transition: $transition;
+
+    a {
+        color: $secondaryFontColorLight;
+        text-decoration: none;
+        transition: $transition;
+    
+        &:hover {
+            text-decoration: none;
+            color: $linkColorHover;
+        };
+    };
+
+    button {
+        background-color: rgba($secondaryBGDark, 0.4);
+        color: $primaryFontColorLight;
+        transition: $transition;
+    };
+
+    form {
+        transition: $transition;
+
+        input, select {
+            background-color: $primaryBGLight;
+            border: none;
+            color: $primaryFontColorLight;
+            font-size: global.$fontSize;
+            transition: $transition;
+
+            &:focus {
+                box-shadow: none;
+                outline: 0;
+            };
+        };
+
+        option {
+            font-size: 1.5rem;
+            padding: 15px 0;
+        };
+    };
+
+    .mCard {
+        background-color: $primaryBGLight;
+        transition: $transition;
+    };
+
+    .rdt_Table {
+        .rdt_TableHead {
+            .rdt_TableHeadRow {
+                background-color: $primaryBGLight;
+                color: $primaryFontColorLight;
+                font-size: 1.5rem;
+                font-weight: bold;
+                transition: $transition;
+
+                .rdt_TableCell {
+                    max-width: 120px;
+                };
+            };
+        };
+        .rdt_TableBody {
+            .rdt_TableRow {
+                transition: $transition;
+
+                &:hover {
+                    border: none;
+                    outline: none;
+                };
+            };
+        };
+    };
+};
+@mixin mainWrapperThemeDark {
+    background-color: $secondaryBGDark;
+    color: $primaryFontColorDark;
+    transition: $transition;
+
+    a {
+        color: $primaryFontColorDark;
+        text-decoration: none;
+        transition: $transition;
+    
+        &:hover {
+            text-decoration: none;
+            color: $linkColorHover;
+        };
+    };
+
+    button {
+        background-color: $primaryBGDark;
+        color: $primaryFontColorDark;
+        transition: $transition;
+    };
+
+    form {
+        transition: $transition;
+
+        input, select {
+            background-color: $primaryBGDark;
+            border: none;
+            color: $primaryFontColorDark;
+            font-size: global.$fontSize;
+            transition: $transition;
+
+            &:focus {
+                box-shadow: none;
+                outline: 0;
+            };
+        };
+    };
+
+    .mCard {
+        background-color: $primaryBGDark;
+        transition: $transition;
+    };
+
+    .rdt_Table {
+        .rdt_TableHead {
+            .rdt_TableHeadRow {
+                background-color: $primaryBGDark;
+                color: $primaryFontColorDark;
+                font-size: global.$fontSize;
+                font-weight: bold;
+                transition: $transition;
+
+                .rdt_TableCell {
+                    max-width: 120px;
+                };
+            };
+        };
+        .rdt_TableBody {
+            .rdt_TableRow {
+                background-color: #2d2c2c;
+                color: $primaryFontColorDark;
+                font-size: 1.3rem;
+                transition: $transition;
+
+                &:nth-child(even) {
+                    background-color: #242426;
+                };
+                &:hover {
+                    background-color: #242426;
+                    border: none;
+                    outline: none;
+                };
+            };
+        };
+    };
+};

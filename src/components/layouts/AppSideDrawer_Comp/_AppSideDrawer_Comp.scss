@@ -1,0 +1,70 @@
+@import "../../../assets/styles/GlobalStyle";
+
+.AppSideDrawerComp {
+  height: $deviceHeight;
+  width: $fullWidth;
+
+  .drawer-header__wrapper {
+    padding: 10px 0 20px 0;
+
+    .app_logo {
+      height: 100px;
+      width: auto;
+      background: url("../../../assets/images/app_logo.png") no-repeat center;
+      background-size: contain;
+      margin: 0 auto
+    };
+  };
+
+  .menu__items {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 0;
+
+    .menu__item {
+      margin: 5px 0;
+      line-height: 3;
+      font-size: 1.6rem;
+      transition: 1s ease;
+
+      display: flex;
+      align-items: center;
+
+      .indicator {
+        height: 45px;
+        width: 8px;
+        border-radius: 0 8px 8px 0;
+        margin-right: 25px;
+        transition: all 0.5s ease;
+      };
+
+      .menu__name {
+        height: 45px;
+        border-radius: 10px;
+        font-size: 1.8rem;
+        padding: 0 40px;
+        transition: all 0.5s ease;
+
+        display: flex;
+        align-items: center
+      };
+
+      &:hover .menu__name, &:hover .indicator {
+        font-weight: 600;
+      };
+    };
+
+    .selected {
+      .menu__item {
+
+        .menu__name, .indicator {
+          font-weight: 600;
+        };
+      };
+    };
+  };
+
+    .admin-leftMenuDrawerComp__tooltip {
+      display: none;
+    };
+  };

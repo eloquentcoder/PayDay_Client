@@ -1,0 +1,69 @@
+@use "../../../../assets/styles/GlobalStyle" as global;
+
+.CounterComp {
+    margin-top: 25px;
+
+    .counter-card__wrapper {
+
+        .counter-card__item {
+            height: 130px;
+            width: auto;
+            border-radius: 12px;
+            padding: 1.5rem 1.7rem;
+
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-size: 1.4rem;
+            };
+            h1 {
+                font-size: 4.5rem;
+            };
+
+            .counter-card__icon {
+                height: 40px;
+                width: 40px;
+                border-radius: 10px;
+                padding: 7px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            };
+            .item0__icon {
+                background: rgba(159, 1, 255, 0.2);
+                color: rgb(131, 1, 210);
+            };
+            .item1__icon {
+                background: rgba(5, 89, 255, 0.2);
+                color: rgb(1, 76, 222);
+            };
+            .item2__icon {
+                background: rgba(255, 0, 229, 0.2);
+                color: rgb(203, 1, 183);
+            };
+            .item3__icon {
+                background: rgba(17, 253, 45, 0.2) !important;
+                color: #02c402;
+            };
+            .item4__icon {
+                background: rgba(255, 89, 0, 0.2);
+                color: rgb(255, 89, 0);
+                padding: 8px;
+            };
+            .item5__icon {
+                background: rgba(0, 255, 255, 0.2);
+                color: rgb(0, 142, 123);
+            };
+            .item6__icon {
+                background: rgba(225, 255, 0, 0.33);
+                color: rgb(136, 154, 0);
+            };
+            .item7__icon {
+                background: rgba(119, 0, 255, 0.2);
+                color: rgb(94, 0, 200);
+            };
+        };
+    };
+};
