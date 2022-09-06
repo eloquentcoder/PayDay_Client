@@ -1,5 +1,6 @@
 import { ResponsiveContainer } from "recharts";
 
+
 /*=== Import _MapChart_Comp SCSS ===*/
 import "./_MapChart_Comp.scss";
 

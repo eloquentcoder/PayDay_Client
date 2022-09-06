@@ -1,0 +1,23 @@
+@use "../../../../assets/styles/GlobalStyle" as global;
+
+
+.ThreeDeeBarChartComp {
+    height: 400px;
+    width: global.$fullWidth;
+    margin-bottom: 20px;
+    padding: 20px 0 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .chart__title {
+        font-size: 2.3rem;
+        font-weight: 600;
+    };
+
+    .recharts-legend-item {
+        font-size: 1.2rem;
+     };
+};

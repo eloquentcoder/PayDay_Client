@@ -149,6 +149,7 @@ $transition: all 1s ease;
       .menu__item {
         .menu__name, .indicator {
             background-color: #C9E3AF;
+            transition: $transition;
         };
       };
     };
@@ -178,6 +179,7 @@ $transition: all 1s ease;
       .menu__item {
         .menu__name, .indicator {
             background-color: $secondaryBGDark;
+            transition: $transition;
         };
       };
     };

@@ -181,6 +181,12 @@ const AppContextProvider = (props) => {
             { name: '#10000-11000', value: 35, fill: "#ADE1FF"  },
             { name: '#11000-13000', value: 56, fill: "#1ED6FF"  },
         ],
+        pieRingData: [
+            { name: '#34000-45000', value: 5, fill: "#FBE947" },
+            { name: '#5000-6000', value: 15, fill: "#52ACFF"  },
+            { name: '#12000-20000', value: 40, fill: "#3DFFDC"  },
+            { name: '#10000-11000', value: 40, fill: "#EF7BE3"  },
+        ],
         areaData: [
             {
               number: 1700,
@@ -231,6 +237,70 @@ const AppContextProvider = (props) => {
             { number: 100, month: "Sep", fill: "#00A28A" },
             { number: 300, month: "Oct", fill: "#58CEFF" }
         ],
+        stackBarData: [
+            { inactive: 25, active: 74, total: 88, name: "MDA-1" },
+            { inactive: 53, active: 83, total: 90, name: "MDA-2" },
+            { inactive: 45, active: 56, total: 95, name: "MDA-3" },
+            { inactive: 33, active: 85, total: 91, name: "MDA-4" },
+            { inactive: 35, active: 88, total: 90, name: "MDA-5" },
+            { inactive: 25, active: 49, total: 73, name: "MDA-6" },
+        ],
+        stackBarData2: [
+            { female: 90, male: 10, ageRange: "18-25 years" },
+            { female: 30, male: 70, ageRange: "26-35 years" },
+            { female: 54, male: 46, ageRange: "36-45 years" },
+            { female: 22, male: 78, ageRange: "46-55 years" },
+            { female: 35, male: 65, ageRange: "56-65 years" },
+            { female: 65, male: 35, ageRange: "66-75 years" },
+            { female: 51, male: 49, ageRange: "76-85 years" },
+        ],
+
+        lineData: [
+            { number: 17, bank: "Bank1", },
+            { number: 8, bank: "Bank2", },
+            { number: 14, bank: "Bank3", },
+            { number: 28, bank: "Bank4", },
+            { number: 25, bank: "Bank5", },
+            { number: 19, bank: "Bank6", },
+            { number: 30, bank: "Bank7", },
+            { number: 29, bank: "Bank8", },
+            { number: 48, bank: "Bank9", },
+            { number: 51, bank: "Bank10", }
+        ],
+        bar3dDataSource: [
+            [
+                {
+                  category: [
+                    { label: "1994" },
+                    { label: "1995" },
+                    { label: "1996" },
+                    { label: "1997" },
+                  ]
+                }
+            ],
+            [
+                {
+                  seriesname: "Hymenoptera",
+                  data: [
+                    { value: "15622" },
+                    { value: "10612" },
+                    { value: "15820" },
+                    { value: "26723" },
+                  ]
+                },
+                {
+                  seriesname: "Diptera",
+                  data: [
+                    { value: "3622" },
+                    { value: "2612" },
+                    { value: "5820" },
+                    { value: "6723" },
+                  ]
+                }
+            ],
+        ],
+        
+
     });
 
     // const navigate = useNavigate();
