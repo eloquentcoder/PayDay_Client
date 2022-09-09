@@ -20,7 +20,7 @@ const AppHeaderComp = () => {
 
                     
                     <i className="bi bi-list hamburger__icon"></i>
-                    <h3 className="dashboard__Text">Dashboard</h3>
+                    <h3 className="dashboard__Text">IPPIS Payroll Analytics</h3>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
