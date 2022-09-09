@@ -22,7 +22,7 @@ const Employee = () => {
 
   useEffect(() => {
     handleGetEmployeeData();
-  }, []);
+  });
 
 
   return (
