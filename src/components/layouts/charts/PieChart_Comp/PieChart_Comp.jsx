@@ -13,7 +13,7 @@ const PieChartComp = (props) => {
             <ResponsiveContainer height={300} width="100%">
                 <PieChart>
                     <Pie
-                        dataKey="value"
+                        dataKey="count"
                         isAnimationActive={true}
                         data={ data }
                         cx="50%"

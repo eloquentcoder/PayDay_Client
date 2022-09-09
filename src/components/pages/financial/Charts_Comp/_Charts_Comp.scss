@@ -1,0 +1,7 @@
+@use "../../../../assets/styles/GlobalStyle" as global;
+
+.ChartsComp {
+    height: auto;
+    width: global.$fullWidth;
+    margin-top: 35px;
+};

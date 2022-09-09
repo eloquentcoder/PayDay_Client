@@ -1,4 +1,3 @@
-
 import { useContext, useEffect } from 'react';
 import DataTable from 'react-data-table-component';
 
@@ -15,50 +14,43 @@ import "./_Table_Comp.scss";
 const TableComp = () => {
 
     // Global State
-    const { dataArray, handleGetData } = useContext(AppStoreContext);
+    const { dashboardTableData, handleGetData } = useContext(AppStoreContext);
 
     const columns = [
         {
             name: 'Name',
             selector: row => row.name,
             sortable: true,
-            maxWidth: "130px"
         },
         {
             name: 'Email',
             selector: row => row.email,
-            maxWidth: "180px"
         },
         {
             name: 'Phone',
             selector: row => row.phone,
             // hide: "sm",
-            maxWidth: "150px"
         },
         {
             name: 'State',
             selector: row => row.state,
             sortable: true,
-            maxWidth: "150px"
         },
         {
             name: 'LGA',
             selector: row => row.localGov,
-            maxWidth: "150px"
         },
         {
             name: 'Option1',
             selector: row => row.option1,
-            maxWidth: "150px"
         },
         {
             name: 'Option2',
             selector: row => row.option2,
-            maxWidth: "150px"
         },
     ];
 
-    const data = dataArray;
+    const data = dashboardTableData;
 
 
     useEffect(() => {

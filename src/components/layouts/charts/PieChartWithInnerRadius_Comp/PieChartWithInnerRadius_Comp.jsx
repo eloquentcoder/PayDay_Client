@@ -27,7 +27,7 @@ const PieChartWithInnerRadiusComp = (props) => {
             <ResponsiveContainer height={300} width="100%">
                 <PieChart margin={{ top: 20, right: 20, left: 0, bottom: 5, }}>
                     <Pie
-                        dataKey="value"
+                        dataKey="count"
                         isAnimationActive={true}
                         data={ data }
                         cx="50%"
@@ -39,7 +39,7 @@ const PieChartWithInnerRadiusComp = (props) => {
                         label
                     >
                         <Label position="center"
-                            content={<CustomLabel value1="4930" value2="TOTAL"/>}>
+                            content={<CustomLabel value1={ data[0].count + data[1].count + data[2].count } value2="TOTAL"/>}>
                         </Label>
                     </Pie>
                     <Legend layout="vertical" verticalAlign="middle" align="right" />

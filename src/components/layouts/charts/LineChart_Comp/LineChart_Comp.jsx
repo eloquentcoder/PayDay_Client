@@ -16,11 +16,11 @@ const LineChartComp = (props) => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
                 >
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="bank" tick={{fontSize: 12}} />
+                    <XAxis dataKey="name" tick={{fontSize: 12}} />
                     <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Line dataKey="number" stroke="#36F097" />
+                    <Line dataKey="count" stroke="#36F097" />
                 </LineChart>
             </ResponsiveContainer>
         </section>

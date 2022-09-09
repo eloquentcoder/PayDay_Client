@@ -1,0 +1,23 @@
+@use  "../../../../../assets/styles/GlobalStyle" as global;
+
+.EmployeeSalaryRangeTableComp {
+    height: 400px;
+    width: global.$fullWidth;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    .table__title {
+        font-size: global.$fontSize;
+        font-weight: 600;
+    };
+
+    .table__wrapper {
+        height: auto;
+        width: global.$fullWidth;
+    };
+}

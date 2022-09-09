@@ -2,7 +2,7 @@
 @use "../../../assets/styles/AppTheme" as theme;
 
 .AppLayoutComp {
-  height: auto;
+  height: global.$deviceHeight;
   width: global.$fullWidth;
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
@@ -15,10 +15,6 @@
   display: grid;
   grid-template-columns: [sidebar-start] 30rem [sidebar-end main-start] calc(100% - 30rem) [main-end];
   grid-template-rows: [header-start] min-content [header-end body-start] 1fr [body-end footer-start] min-content [footer-end];
-
-  // display: grid;
-  // grid-template-columns: [col-start] global.$fullWidth [col-end];
-  // grid-template-rows: min-content 1fr;
 
 
 

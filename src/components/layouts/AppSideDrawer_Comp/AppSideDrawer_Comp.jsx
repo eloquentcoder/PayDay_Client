@@ -1,5 +1,10 @@
 import { NavLink } from "react-router-dom";
 
+/*==== Import Icons ====*/
+import { RiDashboardLine } from "react-icons/ri";
+import { HiOutlineUserGroup } from "react-icons/hi";
+import { GiMoneyStack } from "react-icons/gi";
+
 /*==== Import _AppSideDrawer_Comp SCSS ====*/
 import './_AppSideDrawer_Comp.scss';
 
@@ -22,26 +27,20 @@ const AppSideDrawerComp = () => {
         <ul className="menu__items">
             <NavLink to="/dashboard" className={({ isActive }) => isActive ? "selected" : "" }>
                 <li className="menu__item">
-                    <div className="indicator"></div>
+                    <RiDashboardLine className="menu__icon"/>
                     <div className="menu__name">Dashboard</div>
                 </li>
             </NavLink>
             <NavLink to="/employee" className={({ isActive }) => isActive ? "selected" : "" }>
                 <li className="menu__item">
-                    <div className="indicator"></div>
+                    <HiOutlineUserGroup className="menu__icon"/>
                     <div className="menu__name">Employee</div>
                 </li>
             </NavLink>
             <NavLink to="/financials" className={({ isActive }) => isActive ? "selected" : "" }>
                 <li className="menu__item">
-                    <div className="indicator"></div>
+                    <GiMoneyStack className="menu__icon"/>
                     <div className="menu__name">Financials</div>
-                </li>
-            </NavLink>
-            <NavLink to="/service_roviders" className={({ isActive }) => isActive ? "selected" : "" }>
-                <li className="menu__item">
-                    <div className="indicator"></div>
-                    <div className="menu__name">Service Providers</div>
                 </li>
             </NavLink>
         </ul>

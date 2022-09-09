@@ -16,6 +16,7 @@ import ThemeContextProvider from './contexts/ThemeContextProvider';
 * ===================================================================================================*/
 import Home from './views/Home';
 import Employee from './views/Employee';
+import Financial from './views/Financial';
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
 
               {/*======================== Employee Page =======================*/}
               <Route path="/employee" element={ <Employee /> } />
+
+              {/*======================== Employee Page =======================*/}
+              <Route path="/financials" element={ <Financial /> } />
 
             </Routes>
           </ThemeContextProvider>

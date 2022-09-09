@@ -141,16 +141,17 @@ $transition: all 1s ease;
     };
     
     .menu__item {
-        &:hover .menu__name, &:hover .indicator {
-            background-color: #C9E3AF;
+        transition: color 0.2s ease;
+
+        &:hover {
+            background-color: #DEEECF;
         };
     };
     .selected {
       .menu__item {
-        .menu__name, .indicator {
-            background-color: #C9E3AF;
-            transition: $transition;
-        };
+        background-color: #DEEECF;
+        color: #5CAC0E;
+        transition: $transition;
       };
     };
 };
@@ -171,16 +172,16 @@ $transition: all 1s ease;
     };
     
     .menu__item {
-        &:hover .menu__name, &:hover .indicator {
+        &:hover {
             background-color: $secondaryBGDark;
+            transition: $transition;
         };
     };
     .selected {
       .menu__item {
-        .menu__name, .indicator {
-            background-color: $secondaryBGDark;
-            transition: $transition;
-        };
+        background-color: $secondaryBGDark;
+        color: $secondaryFontColorDark;
+        transition: $transition;
       };
     };
 };
@@ -239,12 +240,15 @@ $transition: all 1s ease;
 
     .rdt_Table {
         .rdt_TableHead {
+            z-index: 0;
+            
             .rdt_TableHeadRow {
                 background-color: $primaryBGLight;
                 color: $primaryFontColorLight;
-                font-size: 1.5rem;
+                font-size: global.$fontSize;
                 font-weight: bold;
                 transition: $transition;
+                // z-index: -1;
 
                 .rdt_TableCell {
                     max-width: 120px;
@@ -256,11 +260,19 @@ $transition: all 1s ease;
                 transition: $transition;
 
                 &:hover {
+                    background-color: #d9eac7;
                     border: none;
                     outline: none;
                 };
             };
         };
+    };
+
+    .nav-tab {
+        .selected {
+            border-bottom: 4px solid $secondaryBGDark;
+            transition: color 0.2s ease !important;
+        }
     };
 };
 @mixin mainWrapperThemeDark {
@@ -332,11 +344,17 @@ $transition: all 1s ease;
                     background-color: #242426;
                 };
                 &:hover {
-                    background-color: #242426;
+                    background-color: #404938;
                     border: none;
                     outline: none;
                 };
             };
         };
+    };
+
+    .nav-tab {
+        .selected {
+            border-bottom: 4px solid $secondaryBGLight;
+        }
     };
 };

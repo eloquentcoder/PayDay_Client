@@ -1,0 +1,23 @@
+@use "../../../../assets/styles/GlobalStyle" as global;
+
+.TabComp {
+    /*==== Nav Tab. ====*/
+    .nav-tab {
+        margin: 10px 0;
+        font-size: 1.8rem;
+        text-align: center;
+        cursor: pointer;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        &__item {
+            flex: 1 auto auto;
+            display: block;
+        };
+
+        .selected {
+            //  Check Theme SCSS.
+        }
+    };
+};
